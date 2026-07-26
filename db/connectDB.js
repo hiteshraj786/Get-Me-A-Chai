@@ -5,7 +5,7 @@ const connectDB = async () => {
     // const conn = await mongoose.connect(`mongodb://localhost:27017/chai`, {
     //   useNewUrlParser: true,
     // });
-    const conn = await mongoose.connect(`mongodb://localhost:27017/chai`);
+    const conn = await mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost:27017/chai`);
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
     console.error(error.message);
