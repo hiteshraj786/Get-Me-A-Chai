@@ -85,6 +85,18 @@ export default function Home() {
         allowFullScreen
         ></iframe>
       </div>
+
+      <div className="w-full max-w-3xl aspect-video">
+      <iframe
+        className="w-full h-full rounded-lg"
+        src="https://www.youtube.com/embed/ND9EbMDXpy0"
+        title="YouTube video player"
+        frameBorder="0"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
+    </div>
      
       
     </div>
